@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color1: "#fceef1",
+              color2: "#e55473",
+              color3: "#f4f4f4",
+              color4: "#fdf6f8",
+              color5: "#7c7677",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-color1 h-[85vh] flex items-center">
+      <div
+        class="flex md:flex-row flex-col items-center justify-around md:w-[80%] h-fit mx-auto"
+      >
+        <div>
+          <h1 class="text-6xl font-bold mb-5">
+            Let's make <br />
+            beautiful flowers a <br />
+            part of your life.
+          </h1>
+          <p class="color-5 leading-12 my-3">
+            It is a long established fact that a reader will be distracted by
+            <br />
+            the readable content of a page when looking at its layout. The point
+            <br />
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters.
+          </p>
+          <button class="bg-color2 text-white px-6 py-3 rounded-xl">
+            Shop Now
+          </button>
+        </div>
+        <div class="w-1/2">
+          <img class="w-[76%] ml-44" src="./images/banner-img.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
