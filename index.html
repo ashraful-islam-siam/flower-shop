@@ -17,6 +17,8 @@
               color3: "#f4f4f4",
               color4: "#fdf6f8",
               color5: "#7c7677",
+              color6: "#d9eff0",
+              color7: "#e3ebeb",
             },
           },
         },
@@ -25,9 +27,9 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-color1 h-[85vh] flex items-center">
+    <header class="bg-color1 md:h-[85vh] flex items-center justify-center px-3">
       <div
-        class="flex md:flex-row flex-col items-center justify-around md:w-[80%] h-fit mx-auto"
+        class="flex md:flex-row flex-col items-center justify-around md:w-[80%] md:h-fit h-auto mx-auto"
       >
         <div>
           <h1 class="text-6xl font-bold mb-5">
@@ -48,9 +50,103 @@
           </button>
         </div>
         <div class="w-1/2">
-          <img class="w-[76%] ml-44" src="./images/banner-img.png" alt="" />
+          <img
+            class="md:w-[76%] h-fit md:ml-44"
+            src="./images/banner-img.png"
+            alt=""
+          />
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Our Featured Flowers -->
+      <section class="py-14">
+        <!-- Text Content -->
+        <div>
+          <h3 class="text-3xl font-bold text-center">Our Featured Flowers</h3>
+          <p class="text-gray-500 text-center my-3 w-1/2 mx-auto">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="md:w-4/5 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div>
+            <div
+              class="rounded-t-full bg-color1 h-[60vh] flex items-end justify-center"
+            >
+              <img class="w-[50%]" src="./images/banner-img.png" alt="" />
+            </div>
+            <h2 class="font-bold text-2xl underline text-center my-3">
+              Pink Flower Tree
+            </h2>
+          </div>
+          <div>
+            <div
+              class="rounded-t-full bg-color6 h-[60vh] flex items-center justify-center"
+            >
+              <img class="w-[50%]" src="./images/flower2.png" alt="" />
+            </div>
+            <h2 class="font-bold text-2xl underline text-center my-3">
+              Pink Flower Tree
+            </h2>
+          </div>
+          <div>
+            <div
+              class="rounded-t-full bg-color7 h-[60vh] flex items-end justify-center"
+            >
+              <img class="w-[50%]" src="./images/flower3.png" alt="" />
+            </div>
+            <h2 class="font-bold text-2xl underline text-center my-3">
+              Pink Flower Tree
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services -->
+      <section
+        class="md:w-4/5 mx-auto bg-color3 grid lg:grid-cols-3 gap-5 justify-center py-12 px-6 mb-8"
+      >
+        <div class="text-center">
+          <img class="w-24 mx-auto" src="./images/delivery-man.png" alt="" />
+          <h2 class="text-lg font-bold text-color5">
+            Same day delivery. Click and Collect.
+          </h2>
+        </div>
+        <div class="text-center">
+          <img class="w-24 mx-auto" src="./images/flower.png" alt="" />
+          <h2 class="text-lg font-bold text-color5">
+            Fresh Flowers. Local Growers.
+          </h2>
+        </div>
+        <div class="text-center">
+          <img class="w-24 mx-auto" src="./images/contact.png" alt="" />
+          <h2 class="text-lg font-bold text-color5">24/7 Free Support.</h2>
+        </div>
+      </section>
+
+      <!-- Discount -->
+      <section class="bg-color1 py-12 lg:flex lg:justify-around items-center">
+        <!-- Text Content -->
+        <div class="text-center">
+          <h2 class="text-4xl font-bold">
+            Hot Deal! Sale Up To 25% <span class="text-color2">Off</span>
+          </h2>
+          <p class="text-gray-500 text-center my-3 lg:w-1/2 mx-auto">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button class="bg-color2 text-white px-6 py-3 rounded-xl">
+            Shop Now
+          </button>
+        </div>
+        <!-- Image Content -->
+        <div class="flex items-center justify-center">
+          <img src="./images/pngwing 8.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
